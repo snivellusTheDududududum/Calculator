@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Calculator</title>
     <link rel ="stylesheet" href="style.css">
+    <script src = "calculator.js" defer></script>
 </head>
 <body>
     <div class= "cal-container">
-        <div class = "working-area"></div>
+        <div id = "screen">
+            <div class = "previous"></div>
+            <div class = "current"></div>
+        </div>
         <div class = "num-container" id = "numbers">
             <button class = "num">1</button>
             <button class = "num">2</button>
@@ -23,8 +27,8 @@
             <button class = "num">9</button>
             <button class="op">*</button>
             <button class = "num">0</button>
-            <button class = "num" id = "clear">Clear</button>
-            <button class = "num">=</button>     
+            <button class = "clear">AC</button>
+            <button class = "equal">=</button>     
             <button class="op">/</button>
             
         </div>
